@@ -18,4 +18,4 @@
 
 <h1>Data Model</h1>
 
-![Entity Relationship Diagram for Project](/assets/images/ERD_for_PP4.jpeg)
+![Entity Relationship Diagram for Project](media/ERD_for_PP4.jpeg)
