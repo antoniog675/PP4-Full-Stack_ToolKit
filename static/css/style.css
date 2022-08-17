@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@100&family=Roboto+Slab:wght@200&display=swap');
+
+/* Aboreto is going to be used for title and smaller heading */
+/* Montserrrat for detais and other descriptions*/
+/* Roboto Slab - Spirit Names - Rum, Vodka, Gin etc*/
+
+nav {
+    font-size: larger;
+}
+.navbar-brand {
+    font-size: x-large;
+}
+
