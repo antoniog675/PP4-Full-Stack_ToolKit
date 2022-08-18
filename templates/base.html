@@ -15,7 +15,7 @@
 <body>
   <nav class="navbar navbar-expand-md bg-light ">
     <div class="container-fluid justify-content-center">
-      <a class="navbar-brand"  href="{% url 'home' %}"><h1>Cocktailz<i class="fa-solid fa-martini-glass"></i></h1></a>
+      <a class="navbar-brand"  href="{% url 'home' %}"><h1>Cocktailz <i class="fa-solid fa-martini-glass"></i></h1></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -23,6 +23,9 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" >Explore</a>
           </li>
           {% if user.is_authenticated %}
           <li class="nav-item">
@@ -54,7 +57,7 @@
   <footer>
     <div class="col footer">
       <div class="row copyright">
-        <h3>Cocktailz<i class="fa-solid fa-martini-glass"></i></h3>
+        <h3>Cocktailz <i class="fa-solid fa-martini-glass"></i></h3>
         <p><i class="fa-regular fa-copyright"></i> All copyrights belong to Cocktailz</p>
         </div>
       <div class="row socials">
