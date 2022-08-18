@@ -19,5 +19,3 @@
 <h1>Data Model</h1>
 
 ![Entity Relationship Diagram for Project](media/ERD_for_PP4.jpeg)
-
-![Cocktails](media/hero_image_cocktail.jpg)
