@@ -13,26 +13,38 @@
     <title>Cocktailz</title>
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg bg-light ">
-            <div class="container-fluid justify-content-center ">
-              <a class="navbar-brand" href="#"><h1>Cocktailz<i class="fa-solid fa-martini-glass"></i></h1></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Sign in</a>
-                  <a class="nav-link" href="#">Register</a>
-                  <a class="nav-link disabled">Disabled</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-    <footer>
-        <div>
-            
+  <nav class="navbar navbar-expand-lg bg-light ">
+    <div class="container-fluid justify-content-center">
+      <a class="navbar-brand"  href="#"><h1>Cocktailz<i class="fa-solid fa-martini-glass"></i></h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Sign in</a>
+          <a class="nav-link" href="#">Register</a>
+          <a class="nav-link disabled">Disabled</a>
         </div>
-    </footer>
+      </div>
+    </div>
+  </nav>
+  <section>
+    {% block content %}
+    <!-- Content Goes here -->
+    {% endblock content %}
+  </section>
+        
+  <footer>
+    <div class="col footer">
+      <div class="row copyright">
+        <h3>Cocktailz<i class="fa-solid fa-martini-glass"></i></h3>
+        <p><i class="fa-regular fa-copyright"></i> All copyrights belong to Cocktailz</p>
+        </div>
+      <div class="row socials">
+        <a class="col-4">Facebook</a><a class="col-4">Instagram</a><a class="col-4">Twitter</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
