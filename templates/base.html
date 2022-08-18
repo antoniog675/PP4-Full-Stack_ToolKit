@@ -48,7 +48,8 @@
       </div>
     </div>
   </nav>
-  <main class="flex-shrink-0 main-bg">
+
+  <main>
     {% block content %}
     <!-- Content Goes here -->
     {% endblock content %}
@@ -56,12 +57,20 @@
         
   <footer>
     <div class="col footer">
-      <div class="row copyright">
+      <div class="row-12 copyright">
         <h3>Cocktailz <i class="fa-solid fa-martini-glass"></i></h3>
         <p><i class="fa-regular fa-copyright"></i> All copyrights belong to Cocktailz</p>
+      </div>
+      <div class="row-12 socials">
+        <div class="col">
+          <a>Facebook</a>
         </div>
-      <div class="row socials">
-        <a class="col-4">Facebook</a><a class="col-4">Instagram</a><a class="col-4">Twitter</a>
+        <div class="col">
+          <a>Instagram</a>
+        </div>
+        <div class="col">
+          <a>Twitter</a>
+        </div>
       </div>
     </div>
   </footer>
