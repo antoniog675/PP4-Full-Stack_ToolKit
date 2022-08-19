@@ -8,6 +8,10 @@
             <div class="col-md-6 masthead-text">
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ post.title }}</h1>
+                <h5 class="spirit_name">{{ post.spirit }}</h5>
+                <p class="card-text ">
+                    {{ post.ingredients | safe }}
+                </p>
                 <!-- Post author goes before the | the post's created date goes after -->
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
