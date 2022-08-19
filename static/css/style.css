@@ -98,12 +98,16 @@ p {
     padding-bottom: 40px;
 }
 
+.btn {
+    font-family: Roboto Slab, sans-serif;
+}
 .sign-up-btn {
     color: black;
     background-color: white;
     border-color: black;
     text-decoration: none;
     font-weight: bold;
+    font-family: Roboto Slab, sans-serif;
 }
 
 .sign-up-btn:hover {
@@ -111,12 +115,12 @@ p {
     background-color: rgb(217, 21, 21);
 }
 
-.btn-signup {
+.signin-btn {
     color: white;
     background-color: black;
 }
 
-.btn-signup:hover {
+.signin-btn:hover {
     color: black;
     background-color: white;
     border-color: black;
