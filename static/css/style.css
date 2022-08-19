@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@100&family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@200&family=Roboto+Slab:wght@200&display=swap');
 
 /* Aboreto is going to be used for title and smaller heading */
 /* Montserrat for detais and other descriptions*/
@@ -7,7 +7,7 @@
 /* Header and Nav bar*/
 
 h1{
-    font-family: Aboreto;
+    font-family: Aboreto, Helvetica;
 }
 nav {
     font-size: larger;
@@ -19,12 +19,12 @@ nav {
 /* Footer */
 
 h3 {
-    font-family: Aboreto
+    font-family: Aboreto, Helvetica
 }
 
 .socials, .copyright {
     text-align: center;
-    font-family: Montserrat;
+    font-family: Montserrat, Arial;
     background-color: black;
     color: white;
     padding-top: 10px;
@@ -38,8 +38,14 @@ footer a {
 }
 
 /* Index styles */
-.hero-image {
-    background-color: red;
-    height: 100px;
-    width: 100%;
+
+.right-div, .left-div {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(245, 237, 237);
+
+}
+
+p {
+    font-family: Montserrat, Arial;
 }
