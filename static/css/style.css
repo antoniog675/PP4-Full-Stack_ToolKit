@@ -9,12 +9,15 @@
 h1{
     font-family: Aboreto, Helvetica;
 }
+
 nav {
     font-size: larger;
 }
+
 .navbar-brand {
     font-size: x-large;
 }
+
 
 /* Footer */
 
@@ -85,6 +88,36 @@ p {
     color: #E84610;
 }
 
-.spirit_name {
+.spirit_name, h2 {
     font-family: Roboto Slab, sans-serif;
+}
+
+/* Sign in page */
+
+.sign-in {
+    padding-bottom: 40px;
+}
+
+.sign-up-btn {
+    color: black;
+    background-color: white;
+    border-color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sign-up-btn:hover {
+    color: white;
+    background-color: rgb(217, 21, 21);
+}
+
+.btn-signup {
+    color: white;
+    background-color: black;
+}
+
+.btn-signup:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
 }

@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <title>Cocktailz</title>
 </head>
-<body>
-  <nav class="navbar navbar-expand-md bg-light ">
+<body class="d-flex flex-column min-vh-100">
+  <nav class="navbar navbar-expand-md bg-light">
     <div class="container-fluid justify-content-center">
       <a class="navbar-brand"  href="{% url 'home' %}"><h1>Cocktailz <i class="fa-solid fa-martini-glass"></i></h1></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +55,7 @@
     {% endblock content %}
   </main>
         
-  <footer>
+  <footer class="mt-auto">
     <div class="col footer">
       <div class="row-12 copyright">
         <h3>Cocktailz <i class="fa-solid fa-martini-glass"></i></h3>
