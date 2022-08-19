@@ -3,6 +3,6 @@ from django.urls import path
 from django.http import HttpResponse
 
 urlpatterns = [
-    path('', views.PostList.as_view(), name='home'),
-    path('explore/', views.explore),
+    path('', views.home, name='home'),
+    path('explore/', views.PostList.as_view(), name='explore'),
 ]
