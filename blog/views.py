@@ -14,7 +14,7 @@ class PostList(generic.ListView):
 
 
 def explore(request):
-    return HttpResponse('explore page')
+    return render(request, 'explore.html')
     
 # class PostDrafts
 
