@@ -53,6 +53,27 @@ p {
     font-family: Montserrat, Arial;
 }
 
+.hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+
+ }
+ .hero-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+    color: white;
+    text-align: center;
+ }
+
+ .hero-signup {
+    text-align: center;
+ }
+
+
 /* Explore page */
 
 .image-container {

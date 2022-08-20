@@ -3,7 +3,13 @@
 {% block content %}
 <!-- Hero image -->
 
-<div class="row-12">
+<div class="row-12 image-container">
+    <div class="position-absolute top-50 start-50 translate-middle-x image-text-button d-none d-md-block d-lg-block d-xl-block">
+        <h1  class="hero-title">Discover our Cocktailz</h1>
+        <h2 class="hero-subtitle">Explore this website</h2>
+        <p class="hero-signup"><a class=" btn sign-up-btn" href="{% url 'account_login' %}">Create an account now!</a></p>
+    </div>
+
     <img src="https://res.cloudinary.com/dvzlcfpp8/image/upload/v1660822172/cocktailz-images/hero_image_cocktail_hwqzcu.jpg" class="img-fluid" alt="Cocktail Hero image">
     <!-- <button class="float-right">Register Now!</button> -->
 </div>
@@ -26,7 +32,7 @@
                 on posts and even start uploading your own drinks.
             </p>
             <p>Simply click on register below and join the community!</p>
-            <button class="btn sign-up-btn" href="/templates/account/signup.html">Register now!</button>
+            <a class="btn sign-up-btn" href="{% url 'account_signup' %}">Register now!</a>
         </div>
     </div>
 </div>
