@@ -73,6 +73,10 @@ p {
     text-align: center;
  }
 
+.hero-image{
+    object-fit: cover;
+    width: 100%;
+}
 
 /* Explore page */
 
