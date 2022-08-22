@@ -73,6 +73,7 @@ p {
     text-align: center;
  }
 
+ /* Bug 2 solved */
 .hero-image{
     object-fit: cover;
     width: 100%;
