@@ -118,6 +118,28 @@ p {
     font-family: Roboto Slab, sans-serif;
 }
 
+/* drinks detail css */
+
+.masthead-text {
+    text-align: center;
+    padding: 10px
+}
+
+.card-horizontal {
+    width: 100%;
+    align-items: flex-end;
+    color: black;
+}
+
+.instructions {
+    background-color: rgb(247, 242, 242);
+}
+
+.comment-icon {
+    padding-left: 1.5rem;
+    margin: 0.2rem;
+}
+
 /* Sign in page */
 
 .sign-in {
