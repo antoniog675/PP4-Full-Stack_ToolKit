@@ -173,3 +173,23 @@ p {
     background-color: white;
     border-color: black;
 }
+
+/* Sign up form */
+
+form {
+    width: 60%;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    float: right;
+    margin-bottom: 10px;
+
+}
+
+#id_remember {
+    float:none;
+}

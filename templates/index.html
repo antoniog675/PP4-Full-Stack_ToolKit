@@ -7,7 +7,11 @@
     <div class="position-absolute top-50 start-50 translate-middle-x image-text-button d-none d-md-block d-lg-block d-xl-block">
         <h1  class="hero-title">Discover our Cocktailz</h1>
         <h2 class="hero-subtitle">Explore this website</h2>
-        <p class="hero-signup"><a class=" btn sign-up-btn" href="{% url 'account_login' %}">Create an account now!</a></p>
+        {% if user.is_authenticated %}
+        <!-- button hidden -->
+        {% else %}
+        <p class="hero-signup"><a class=" btn sign-up-btn" href="{% url 'account_signup' %}">Create an account now!</a></p>
+        {% endif %}
     </div>
 
     <img src="https://res.cloudinary.com/dvzlcfpp8/image/upload/v1660822172/cocktailz-images/hero_image_cocktail_hwqzcu.jpg" class="hero-image" alt="Cocktail Hero image">
@@ -31,8 +35,11 @@
             <p>If you sign up to the 'Cocktailz' you can start to like posts, comment
                 on posts and even start uploading your own drinks.
             </p>
+            {% if user.is_authenticated %}
+            {% else %}
             <p>Simply click on register below and join the community!</p>
             <a class="btn sign-up-btn" href="{% url 'account_signup' %}">Register now!</a>
+            {% endif %}
         </div>
     </div>
 </div>
