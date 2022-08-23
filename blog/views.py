@@ -10,6 +10,8 @@ from .forms import CommentForm
 def home(request):
     return render(request, 'index.html')
 
+def add_drinks(request):
+    return render(request, 'add_drinks.html')
 
 class PostList(generic.ListView):
     model = Post

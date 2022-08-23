@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <h1 style="text-align: center;">Add your drink</h1>
+            <form method="post" action="">
+                {% csrf_token %}
+                <div>
+                    {{ post_drinks.title }}
+                </div>
+                <div>
+                    {{ post_drinks.author }}
+                </div>
+                <div>
+                    {{ post_drinks.body }}
+                </div>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+{% endblock %}
