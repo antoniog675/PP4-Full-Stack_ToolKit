@@ -8,15 +8,8 @@
             <h1 style="text-align: center;">Add your drink</h1>
             <form method="post" action="">
                 {% csrf_token %}
-                <div>
-                    {{ post_drinks.title }}
-                </div>
-                <div>
-                    {{ post_drinks.author }}
-                </div>
-                <div>
-                    {{ post_drinks.body }}
-                </div>
+                {{ form }}
+                <button>Post Drink</button>
             </form>
         </div>
         <div class="col-3"></div>

@@ -3,6 +3,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
+from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
 
@@ -11,7 +12,8 @@ def home(request):
     return render(request, 'index.html')
 
 def add_drinks(request):
-    return render(request, 'add_drinks.html')
+    form = UserCreationForm()
+    return render(request, 'add_drinks.html', {"form": form})
 
 class PostList(generic.ListView):
     model = Post
