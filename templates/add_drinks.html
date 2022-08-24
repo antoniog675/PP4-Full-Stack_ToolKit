@@ -1,14 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load crispy_forms_tags %}
 <div class="container">
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6">
             <h1 style="text-align: center;">Add your drink</h1>
-            <form class="user-post-drink" method="post" action=" /admin/">
+            <form class="user-post-drink" method="POST">
                 {% csrf_token %}
-                {{ form }}
+                {{ form | crispy }}
                 <button type="submit" class="btn btn-signup btn-lg">Post Drink</button>
             </form>
         </div>

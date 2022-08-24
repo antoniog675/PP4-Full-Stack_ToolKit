@@ -1,4 +1,4 @@
-from .models import Comment, PostDrink
+from .models import Comment, Post
 from django import forms
 
 
@@ -9,5 +9,6 @@ class CommentForm(forms.ModelForm):
 
 class PostDrinkForm(forms.ModelForm):
     class Meta:
-        model = PostDrink
-        fields = '__all__'
+        model = Post
+        fields = ('title', 'spirit', 'author', 'ingredients', 
+        'instructions', 'featured_image', 'status')

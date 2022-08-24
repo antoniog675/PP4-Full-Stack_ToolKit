@@ -12,7 +12,11 @@ def home(request):
     return render(request, 'index.html')
 
 def add_drinks(request):
-    form = PostDrinkForm()
+    form = PostDrinkForm(data=request.POST)
+    if form.is_valid():
+        author = form.save(commit=False)
+        author.user = request.user
+        author.save()
     return render(request, 'add_drinks.html', {"form": form})
 
 class PostList(generic.ListView):

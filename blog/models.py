@@ -1,9 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.utils.text import slugify
 
 STATUS = ((0, "Draft"), (1, "Published"))
-USER_STATUS = ((0, "Draft"), (1, "Send to admin for approval"))
 
 # Create your models here.
 
@@ -24,6 +24,10 @@ class Post(models.Model):
 
     class Meta:
         ordering = ["-created_on"]
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+        super(Post, self).save(*args, **kwargs)
 
     def _str_(self):
         return self.title
@@ -46,12 +50,12 @@ class Comment(models.Model):
         return f"comment {self.body} by {self.name}"
 
 
-class PostDrink(models.Model):
-    title = models.CharField(max_length=20, unique=True)
-    spirit = models.TextField()
-    slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_post")
-    featured_image = CloudinaryField('image', default='placeholder')
-    ingredients = models.TextField()
-    instructions = models.TextField()
-    status = models.IntegerField(choices=USER_STATUS, default=0)
+# class PostDrink(models.Model):
+#     title = models.CharField(max_length=20, unique=True)
+#     spirit = models.TextField()
+#     slug = models.SlugField(max_length=200, unique=True)
+#     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_post")
+#     featured_image = CloudinaryField('image', default='placeholder')
+#     ingredients = models.TextField()
+#     instructions = models.TextField()
+#     status = models.IntegerField(choices=USER_STATUS, default=0)
