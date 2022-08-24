@@ -6,10 +6,10 @@
         <div class="col-3"></div>
         <div class="col-6">
             <h1 style="text-align: center;">Add your drink</h1>
-            <form method="post" action="">
+            <form class="user-post-drink" method="post" action=" /admin/">
                 {% csrf_token %}
                 {{ form }}
-                <button>Post Drink</button>
+                <button type="submit" class="btn btn-signup btn-lg">Post Drink</button>
             </form>
         </div>
         <div class="col-3"></div>

@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, PostDrinkForm
 from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
@@ -12,7 +12,7 @@ def home(request):
     return render(request, 'index.html')
 
 def add_drinks(request):
-    form = UserCreationForm()
+    form = PostDrinkForm()
     return render(request, 'add_drinks.html', {"form": form})
 
 class PostList(generic.ListView):

@@ -193,3 +193,13 @@ input {
 #id_remember {
     float:none;
 }
+
+/* User post drinks */
+
+.user-post-drink {
+    display: grid;
+}
+
+.user-post-drink button {
+    margin: 10px;
+}
