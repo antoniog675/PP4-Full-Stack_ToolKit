@@ -15,16 +15,18 @@ def add_drinks(request):
     form = PostDrinkForm(data=request.POST)
     if form.is_valid():
         author = form.save(commit=False)
-        author.user = request.user
+        author.author = request.user
         author.save()
         return redirect('/explore')
     return render(request, 'add_drinks.html', {"form": form})
+
 
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'explore.html'
     paginate_by = 6
+
 
 class DrinksDetail(View):
 

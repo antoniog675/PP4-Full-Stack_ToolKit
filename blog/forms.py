@@ -10,5 +10,5 @@ class CommentForm(forms.ModelForm):
 class PostDrinkForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'spirit', 'author', 'ingredients', 
+        fields = ('title', 'spirit', 'ingredients', 
         'instructions', 'featured_image', 'status')
