@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
@@ -17,6 +17,7 @@ def add_drinks(request):
         author = form.save(commit=False)
         author.user = request.user
         author.save()
+        return redirect('/explore')
     return render(request, 'add_drinks.html', {"form": form})
 
 class PostList(generic.ListView):
