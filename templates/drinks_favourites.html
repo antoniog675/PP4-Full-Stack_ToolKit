@@ -2,7 +2,7 @@
 
 {% block content %}
 <!-- <h1>This is where the fun begins</h1> -->
-<h1>Favourites</h1>
+<h1 style="text-align: center; margin-top: 19px;">Favourites</h1>
 <div class="container-fluid">
     <div class="row">
          
@@ -20,9 +20,6 @@
                                 {% else %}
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}">
                                 {% endif %}
-                                <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
-                                </div>
                             </div>
                             <a href="{% url 'drinks_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
@@ -31,6 +28,7 @@
                             <hr>
                             <p class="card-text text-muted h6">{{ post.created_on }} 
                                 <i class="far fa-heart"></i>{{ post.number_of_likes }}</p>
+                                <p class="author">Author: {{ post.author }}</p>
                         </div>
                     </div>
                 </div>

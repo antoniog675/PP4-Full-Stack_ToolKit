@@ -5,8 +5,8 @@
 <div class="container">
     <div class="row">
         <div class="col-3"></div>
-        <div class="col-6">
-            <h1 style="text-align: center;">Add your drink</h1>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+            <h1 style="text-align: center; margin-top: 19px;">Add your drink</h1>
             <form class="user-post-drink" method="POST">
                 {% csrf_token %}
                 {{ form | crispy }}

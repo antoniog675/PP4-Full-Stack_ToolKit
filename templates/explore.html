@@ -19,9 +19,6 @@
                                 {% else %}
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}">
                                 {% endif %}
-                                <!-- <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
-                                </div> -->
                             </a>
                             <a href="{% url 'drinks_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
