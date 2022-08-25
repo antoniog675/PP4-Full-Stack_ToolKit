@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@200&family=Roboto+Slab:wght@200&display=swap');
 
 /* Aboreto is going to be used for title and smaller heading */
-/* Montserrat for detais and other descriptions*/
+/* Montserrat for details and other descriptions*/
 /* Roboto Slab - Spirit Names - Rum, Vodka, Gin etc*/
 
 /* Header and Nav bar*/
@@ -38,6 +38,15 @@ h3 {
 footer a {
     text-decoration: none;
     color: white;
+    font-family: Montserrat;
+    font-weight: bold;
+    transition: all 500ms;
+}
+
+footer a:hover {
+    font-size:20px;
+    font-size-adjust: 10px;
+    color: red;
 }
 
 /* Index styles */
@@ -73,6 +82,17 @@ p {
     text-align: center;
  }
 
+ .featured-image-left {
+    display: inline-block;
+    height:100px;
+ }
+
+ .featured-image-right {
+    display: inline-block;
+    float: right;
+    height:200px;
+ }
+
  /* Bug 2 solved */
 .hero-image{
     object-fit: cover;
@@ -90,13 +110,14 @@ p {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: red;
 }
 
 .author {
-    color: white;
+    color: black;
     margin: 4px;
-    text-transform: uppercase;
+    font-family: Montserrat;
+    opacity: 0.6;
 }
 
 .card {
