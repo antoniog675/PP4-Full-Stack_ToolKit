@@ -71,6 +71,11 @@
             </div>
         </div>
     </div>
+    {% if user.is_authenticated %}
+    {% if user.id == post.author.id %}
+        <a href="{% url 'edit_drinks' post.pk %}" class="post-link">Edit</a>
+    {% endif %}
+    {% endif %}
     <div class="row">
         <div class="col">
             <hr>

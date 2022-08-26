@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+{% if user.is_authenticated %}
+<h1>EDIT PAGE</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="edit-title">Edit your Recipe: </h1>
+                </div>
+            </div>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <button type="submit" class="btn btn-dark">UPDATE</button>
+            </form>
+            </br>
+            <button class="btn btn-danger"><span><a href="#">Delete
+                        Recipe</a></span></button>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}

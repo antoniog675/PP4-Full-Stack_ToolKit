@@ -159,3 +159,11 @@ class FavouritesDetail(View):
                 "comment_form": CommentForm()
             },
         )
+    
+
+class UpdatePostView(UpdateView):
+    model = Post
+    template_name = 'edit_post.html'
+    form_class = PostDrinkForm
+    context_object_name = 'edit_drinks'
+    success_url = '/explore/'
