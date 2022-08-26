@@ -69,7 +69,7 @@
     {% endblock content %}
   </main>
         
-  <footer class="mt-auto">
+  <footer>
     <div class="col footer">
       <div class="row-12 copyright">
         <h3>Cocktailz <i class="fa-solid fa-martini-glass"></i></h3>
@@ -87,13 +87,13 @@
         </div>
       </div>
     </div>
-    <script>
-      setTimeout(function () {
-          let messages = document.getElementById('msg');
-          let alert = new bootstrap.Alert(messages);
-          alert.close();
-      }, 2000);
-  </script>
   </footer>
+  <script>
+    setTimeout(function () {
+        let messages = document.getElementById('msg');
+        let alert = new bootstrap.Alert(messages);
+        alert.close();
+    }, 2000);
+  </script>
 </body>
 </html>

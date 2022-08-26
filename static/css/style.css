@@ -18,6 +18,10 @@ nav {
     font-size: x-large;
 }
 
+body {
+    height: 100vh;
+    position: relative;
+}
 
 /* Footer */
 
@@ -93,6 +97,19 @@ p {
     height:200px;
  }
 
+.image-left {
+    height:200px;
+    width:100%;
+    object-fit: cover;
+
+}
+
+.image-right {
+    height:300px;
+    width:100%;
+    object-fit: cover;
+
+}
  /* Bug 2 solved */
 .hero-image{
     object-fit: cover;
