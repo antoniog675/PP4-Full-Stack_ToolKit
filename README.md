@@ -1,3 +1,12 @@
+<h1>Cocktailz<h1>
+<h2>About the website</h2>
+
+<p>link to deployed site</p>
+<p>Am i Responsive images</p>
+<h3>Target Audience</h3>
+<p>18 and over
+
+
 <h1>User Stories</h1>
 
 <li>
@@ -16,6 +25,76 @@
     <ul></ul>
 </li>
 
+<h2>Structure</h2>
+<ul>
+    <li>base.html</li>
+    <li>index.html</li>
+    <li>explore.html</li>
+    <li>drinks_detail.html</li>
+    <li>add_drinks.html</li>
+    <li>drinks_favourites.html</li>
+    <h3>accounts</h3>
+    <li>signup.html</li>
+    <li>login.html</li>
+    <li>logout.html</li>
+</ul>
+
+
+<h2>Wireframes</h2>
+<p>insert images of wireframes for each size</p>
 <h1>Data Model</h1>
 
 ![Entity Relationship Diagram for Project](media/ERD_for_PP4.jpeg)
+
+<h2>Colours</h2>
+
+<h2>Typegraphy</h2>
+<p>fonts</p>
+<p>font awesome icons</p>
+
+<h2>Features</h2>
+<p>index page gives a small intro to webpage, eye catching when users first land on it, register and sign in button for users that need to log in or need to register and account</p>
+<p>Dissapears when users log in</p>
+<p>explore page contains a list of all the drinks that have been posted, with the name of the drink, spirit, author name and when it was displayed, likes and comments</p>
+<p>register page</p>
+<p>login page</p>
+<p>logout page</p>
+<p>favourites page</p>
+
+<h2>Languages</h2>
+<p>Python</p>
+<p>HTML</p>
+<p>CSS</p>
+<p>Javascript</p>
+
+<h2>Technologies</h2>
+<p>Django</p>
+<p>Github</p>
+<p>Gitpod</p>
+<p>Heroku</p>
+<p>Stack Overflow</p>
+<p>Balsamiq</p>
+<p>Pep8</p>
+<p>Cloudinary</p>
+<p>PostgrelSQL</p>
+<p>Bootstrap</p>
+
+<h2>Testing, bugs and fixed</h2>
+<p>Testing</p>
+<p>pep8 all files</p>
+<p>HTML validator</p>
+<p>CSS validator</p>
+<h3>Manuel testing</h3>
+
+<p>Solved Bugs</p>
+<p>Unsolved Bugs</p>
+
+
+<h2>Deployment</h2>
+
+<h2>Setting up project</h2>
+<p></p>
+
+<h2>Credits</h2>
+
+<p>Future features, drafts, virgin cocktails, category</p>
