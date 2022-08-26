@@ -19,11 +19,17 @@ nav {
 }
 
 body {
-    height: 100vh;
-    position: relative;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 /* Footer */
+
+footer {
+    margin-top: auto;
+}
 
 h3 {
     font-family: Aboreto, Helvetica
@@ -92,7 +98,6 @@ p {
  }
 
  .featured-image-right {
-    display: inline-block;
     float: right;
     height:200px;
  }
@@ -230,6 +235,12 @@ input {
 
 #id_remember {
     float:none;
+}
+
+/* Drinks Detail */
+
+.masthead-text .card-text p span {
+    font-family: Roboto Slab;
 }
 
 /* User post drinks */

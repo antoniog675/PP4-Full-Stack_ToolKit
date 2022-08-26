@@ -1,3 +1,8 @@
+"""
+These are the forms used for user comments, and if user
+wishes to upload a drink the PostDrinkForm is used to
+retrieve information to build the post
+"""
 from .models import Comment, Post
 from django import forms
 
@@ -7,8 +12,10 @@ class CommentForm(forms.ModelForm):
         model = Comment
         fields = ('body',)
 
+
 class PostDrinkForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'spirit', 'ingredients', 
-        'instructions', 'featured_image', 'status')
+        fields = (
+            'title', 'spirit', 'ingredients', 'instructions',
+            'featured_image', 'status')
