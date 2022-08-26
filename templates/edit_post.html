@@ -11,7 +11,7 @@
         <div class="col-md-8 mt-3 offset-md-2">
             <div class="row">
                 <div class="col-md-8">
-                    <h1 class="edit-title">Edit your Recipe: </h1>
+                    <h1 class="edit-title">Edit your Post: </h1>
                 </div>
             </div>
             <form method="POST">
@@ -20,8 +20,11 @@
                 <button type="submit" class="btn btn-dark">UPDATE</button>
             </form>
             </br>
-            <button class="btn btn-danger"><span><a href="#">Delete
-                        Recipe</a></span></button>
+            <a href="#" class="btn btn-danger post-link">Delete</a>
+
+            <!-- {% if user.id == post.author.id %}
+                <a href="#" class="btn btn-danger post-link">Delete</a> -->
+            <!-- {% endif %} -->
         </div>
     </div>
 </div>

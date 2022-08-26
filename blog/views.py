@@ -167,3 +167,10 @@ class UpdatePostView(UpdateView):
     form_class = PostDrinkForm
     context_object_name = 'edit_drinks'
     success_url = '/explore/'
+
+
+class DeletePostView(DeleteView):
+    model = Post
+    template_name = 'delete_post.html'
+    context_object_name = 'delete_drinks'
+    success_url = '/explore/'

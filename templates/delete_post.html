@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+{% if user.id == post.author %}
+
+<div class="card">
+    <h1 class="card-header">Delete your Post: </h1>
+    <div class="card-body">
+        <h3 class="card-title">Delete: {{ post.title }}</h3>
+
+
+        <form method="POST" class="card-text">
+            {% csrf_token %}
+            <strong>Are you sure you would like to delete your Post?</strong>
+            </br>
+            </br>
+            <button class="btn btn-danger">DELETE RECIPE</button>
+        </form>
+    </div>
+</div>
+
+{% endif %}
+{% endif %}
+
+{% endblock %}
