@@ -183,6 +183,35 @@ p {
     margin: 0.2rem;
 }
 
+.edit-button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 2.5em;
+    font-family: Roboto Slab, sans-serif;
+}
+
+.delete-button {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Roboto Slab, sans-serif;
+}
+
+.edit-button:hover {
+    color: white;
+}
+
+.delete-button:hover {
+    color: white;
+
+}
+
+
 /* Sign in page */
 
 .sign-in {

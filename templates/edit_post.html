@@ -5,10 +5,9 @@
 {% load crispy_forms_tags %}
 
 {% if user.is_authenticated %}
-<h1>EDIT PAGE</h1>
 <div class="container">
     <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
+        <div class="col-md-8 mt-3 offset-md-2" style="margin-bottom: 2em">
             <div class="row">
                 <div class="col-md-8">
                     <h1 class="edit-title">Edit your Post: </h1>
@@ -17,14 +16,10 @@
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy }}
-                <button type="submit" class="btn btn-dark">UPDATE</button>
+                <button type="submit" class="btn btn-dark" style="margin-top: 1em;">UPDATE</button>
             </form>
             </br>
-            <a href="{% url 'delete_drinks' pk %}" class="btn btn-danger post-link">Delete</a>
-
-            <!-- {% if user.id == post.author.id %}
-                <a href="#" class="btn btn-danger post-link">Delete</a> -->
-            <!-- {% endif %} -->
+            <a href="{% url 'delete_drinks' pk %}" class="delete-button post-link">Delete</a>
         </div>
     </div>
 </div>

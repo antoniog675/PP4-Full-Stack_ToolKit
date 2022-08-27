@@ -1,17 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<h1>hello</h1>
 {% if user.is_authenticated %}
 
-<div class="card">
+<div class="card" style="text-align: center;">
     <h1 class="card-header">Delete your Post: </h1>
-    <div class="card-body">
+    <div class="card-body" style="margin: 3.5em;">
         <h3 class="card-title">Delete: {{ post.title }}</h3>
 
 
-        <form method="POST" class="card-text" enctype="multipart/form-data">
+        <form method="POST" class="card-text" enctype="multipart/form-data" style="width: auto; font-family: Montserrat;">
             {% csrf_token %}
             <strong>Are you sure you would like to delete your Post?</strong>
             </br>

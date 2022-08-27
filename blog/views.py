@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
-from django.views.generic import UpdateView, DeleteView
+from django.views.generic import UpdateView, DeleteView, CreateView
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm, PostDrinkForm
@@ -11,14 +11,18 @@ from .forms import CommentForm, PostDrinkForm
 def home(request):
     return render(request, 'index.html')
 
-def add_drinks(request):
-    form = PostDrinkForm(data=request.POST)
-    if form.is_valid():
-        author = form.save(commit=False)
-        author.author = request.user
-        author.save()
-        return redirect('/explore')
-    return render(request, 'add_drinks.html', {"form": form})
+class CreateRecipeView(CreateView):
+    model = Post
+    template_name = 'add_drinks.html'
+    context_object_name = 'add_drinks'
+    form_class = PostDrinkForm
+    success_url = '/explore'
+
+
+    def form_valid(self, form):
+        user = self.request.user
+        form.instance.author = user
+        return super(CreateRecipeView, self).form_valid(form)
 
 
 class PostList(generic.ListView):

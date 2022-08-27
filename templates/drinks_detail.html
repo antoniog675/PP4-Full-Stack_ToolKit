@@ -45,7 +45,7 @@
                     <div class="col-1">
                         <strong>
                             {% if user.is_authenticated %}
-                            <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+                            <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST" enctype="multipart/form-data">
                                 {% csrf_token %}
                                 {% if liked %}
                                 <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
@@ -73,7 +73,7 @@
     </div>
     {% if user.is_authenticated %}
     {% if user.id == post.author.id %}
-        <a href="{% url 'edit_drinks' post.pk %}" class="post-link">Edit</a>
+        <a href="{% url 'edit_drinks' post.pk %}" class=" edit-button post-link">Edit</a>
     {% endif %}
     {% endif %}
     <div class="row">
