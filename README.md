@@ -92,8 +92,7 @@
 
 <h2>Deployment</h2>
 
-<h2>Setting up project</h2>
-<p></p>
+<h3>Creating the enviroment</h3>
 
 <h2>Credits</h2>
 
