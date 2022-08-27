@@ -1,6 +1,7 @@
 <h1>Cocktailz<h1>
 <h2>About the website</h2>
 
+[Live Site](https://cocktailzapp.herokuapp.com/)
 <p>link to deployed site</p>
 <p>Am i Responsive images</p>
 <h3>Target Audience</h3>
@@ -93,6 +94,14 @@
 <h2>Deployment</h2>
 
 <h3>Creating the enviroment</h3>
+<p>To deploy the project to heroku we first have to set 'DEBUG = False' rather than 'True'</p>
+
+<p>And we have to add 'X_FRAME_OPTIONS = "SAMEORIGIN'" Under the debug</p>
+<ul>
+    <li>We will than go to the Herokuapp and go to settings and select 'Reveal Config Vars'</li>
+    <li>Remove 'DISABLE_COLLECTSTATIC' from the config vars</li>
+    <li>Go on 'Delpoy', scroll down and select 'Deploy Branch'</li>
+</ul>
 
 <h2>Credits</h2>
 
