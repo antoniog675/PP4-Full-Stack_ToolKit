@@ -14,13 +14,13 @@
                     <h1 class="edit-title">Edit your Post: </h1>
                 </div>
             </div>
-            <form method="POST">
+            <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy }}
                 <button type="submit" class="btn btn-dark">UPDATE</button>
             </form>
             </br>
-            <a href="#" class="btn btn-danger post-link">Delete</a>
+            <a href="{% url 'delete_drinks' pk %}" class="btn btn-danger post-link">Delete</a>
 
             <!-- {% if user.id == post.author.id %}
                 <a href="#" class="btn btn-danger post-link">Delete</a> -->

@@ -21,5 +21,5 @@ class PostDrinkForm(forms.ModelForm):
         """Meta for PostDrinkForm"""
         model = Post
         fields = (
-            'title', 'spirit', 'ingredients', 'instructions',
+            "id", 'title', 'spirit', 'ingredients', 'instructions',
             'featured_image', 'status')

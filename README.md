@@ -44,7 +44,7 @@
 <p>insert images of wireframes for each size</p>
 <h1>Data Model</h1>
 
-![Entity Relationship Diagram for Project](media/ERD_for_PP4.jpeg)
+![Entity Relationship Diagram for Project](static/media/ERD_for_PP4.jpeg)
 
 <h2>Colours</h2>
 

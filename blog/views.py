@@ -168,6 +168,13 @@ class UpdatePostView(UpdateView):
     context_object_name = 'edit_drinks'
     success_url = '/explore/'
 
+    def get_context_data(self, **kwargs):
+        ctx = super().get_context_data(**kwargs)
+        curr_post = Post.objects.filter(id=self.get_object().id)
+        if curr_post:
+            ctx['pk'] = curr_post[0].id
+        return ctx
+
 
 class DeletePostView(DeleteView):
     model = Post

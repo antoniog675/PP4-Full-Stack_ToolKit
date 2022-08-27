@@ -2,8 +2,8 @@
 
 {% block content %}
 
+<h1>hello</h1>
 {% if user.is_authenticated %}
-{% if user.id == post.author %}
 
 <div class="card">
     <h1 class="card-header">Delete your Post: </h1>
@@ -11,7 +11,7 @@
         <h3 class="card-title">Delete: {{ post.title }}</h3>
 
 
-        <form method="POST" class="card-text">
+        <form method="POST" class="card-text" enctype="multipart/form-data">
             {% csrf_token %}
             <strong>Are you sure you would like to delete your Post?</strong>
             </br>
@@ -21,7 +21,6 @@
     </div>
 </div>
 
-{% endif %}
 {% endif %}
 
 {% endblock %}

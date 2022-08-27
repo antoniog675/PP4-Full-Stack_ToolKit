@@ -7,9 +7,9 @@
         <div class="col-3"></div>
         <div class="col-12 col-md-6 col-lg-6 col-xl-6">
             <h1 style="text-align: center; margin-top: 19px;">Add your drink</h1>
-            <form class="user-post-drink" method="POST">
+            <form enctype="multipart/form-data" class="user-post-drink" method="post">
                 {% csrf_token %}
-                {{ form |crispy }}
+                {{ form | crispy }}
                 <button type="submit" class="btn btn-signup btn-lg">Post Drink</button>
             </form>
         </div>
