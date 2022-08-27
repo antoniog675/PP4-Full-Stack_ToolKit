@@ -55,7 +55,7 @@ footer a {
 
 footer a:hover {
     font-size:20px;
-    font-size-adjust: 10px;
+    font-size-adjust: 0.5;
     color: red;
 }
 
@@ -158,7 +158,7 @@ p {
 }
 
 .spirit_name, h2 {
-    font-family: Roboto Slab, sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 /* drinks detail css */
@@ -189,7 +189,7 @@ p {
     padding: 10px;
     border-radius: 3px;
     font-size: 2.5em;
-    font-family: Roboto Slab, sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 .delete-button {
@@ -199,7 +199,7 @@ p {
     background-color: red;
     border-radius: 5px;
     padding: 10px;
-    font-family: Roboto Slab, sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 .edit-button:hover {
@@ -219,7 +219,7 @@ p {
 }
 
 .btn {
-    font-family: Roboto Slab, sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
 }
 .sign-up-btn {
     color: black;
@@ -227,7 +227,7 @@ p {
     border-color: black;
     text-decoration: none;
     font-weight: bold;
-    font-family: Roboto Slab, sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 .sign-up-btn:hover {
@@ -269,7 +269,7 @@ input {
 /* Drinks Detail */
 
 .masthead-text .card-text p span {
-    font-family: Roboto Slab;
+    font-family: 'Roboto Slab';
 }
 
 /* User post drinks */
