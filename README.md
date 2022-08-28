@@ -29,6 +29,11 @@
     <li>As the admin I can approve of user comments so that only positive comments are uploaded into the site, this approval will just be for posts that do not belong to the user</li>
     <li>As a admin I can approve which drinks are added into the website so that there is interactivity between myself and users and so that I can make sure there are not any duplicates or just mixed drinks</li>
     <li>As a user I can add my own drink if it isn't there already so that people will be able to explore more cocktails</li>
+
+<h2>Planning</h2>
+
+![User stories in prjects section on github, todo, in progress, done](/media/agile_planning.jpg)
+![All users completed](/media/agile_complete.jpg)
 </ul>
 
 <h2>Structure</h2>
