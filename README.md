@@ -519,3 +519,8 @@ Favourites Model - Contains post.id, user, likes, image
     <li>Documentation on the django website where I learnt more about forms, CreateView, UpdateView and Delete View. Also plenty of documentation on linking views and URLs.</li>
     <li>Finally credits to slack, I could not have done this without looking at everyones advice there, knowing that everyone got the same issues really helped me believe I was not alone struggling with this project. Plenty of documenation and explanations</li>
 </ul>
+
+<h2>Self acknowledgement</h2>
+<p>I am impressed at myself for actually getting this far, I managed to create a website that incorporates the basic CRUD functionality but I could have done better</p>
+<p>Unfortunatly I ran out of time and was not able to create a more detailed README file as I could if I had more time. I managed to get the bare minimum but I feel like I could have done more deep testing and added more detail to screenshots giving a more detailed explanantion</p>
+<p>My goal is to be able to write a well reported README document and manage my time better</p>
