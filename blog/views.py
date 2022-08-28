@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse, redirect
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.views.generic import UpdateView, DeleteView, CreateView
 from django.http import HttpResponseRedirect
@@ -11,13 +11,13 @@ from .forms import CommentForm, PostDrinkForm
 def home(request):
     return render(request, 'index.html')
 
+
 class CreateRecipeView(CreateView):
     model = Post
     template_name = 'add_drinks.html'
     context_object_name = 'add_drinks'
     form_class = PostDrinkForm
     success_url = '/explore'
-
 
     def form_valid(self, form):
         user = self.request.user
@@ -41,7 +41,7 @@ class DrinksDetail(View):
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
-        
+
         return render(
             request,
             "drinks_detail.html",
@@ -70,10 +70,10 @@ class DrinksDetail(View):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
-        
+
         else:
             comment_form = CommentForm()
-        
+
         return render(
             request,
             "drinks_detail.html",
@@ -85,7 +85,7 @@ class DrinksDetail(View):
                 "comment_form": CommentForm()
             },
         )
-    
+
 
 class PostLike(View):
 
@@ -95,7 +95,7 @@ class PostLike(View):
             post.likes.remove(request.user)
         else:
             post.likes.add(request.user)
-        
+
         return HttpResponseRedirect(reverse('drinks_detail', args=[slug]))
 
 
@@ -119,7 +119,7 @@ class FavouritesDetail(View):
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
-        
+
         return render(
             request,
             "drinks_detail.html",
@@ -148,10 +148,10 @@ class FavouritesDetail(View):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
-        
+
         else:
             comment_form = CommentForm()
-        
+
         return render(
             request,
             "drinks_detail.html",
@@ -163,7 +163,7 @@ class FavouritesDetail(View):
                 "comment_form": CommentForm()
             },
         )
-    
+
 
 class UpdatePostView(UpdateView):
     model = Post
