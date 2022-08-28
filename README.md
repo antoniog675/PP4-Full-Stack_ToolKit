@@ -144,6 +144,32 @@
 </details>
 <hr>
 
+<details>
+<summary>Admin Page</summary>
+<br>
+
+<ul>
+    <li>Login in page for admin</li>
+
+![Admin login page](/media/admin_login.jpg)
+    <li>Administration panel</li>
+![Administration page where you can check on posts and comments](/media/admin_administration_page.jpg)
+    <li>Post panel, where admin can see all posts on webpage</li>
+
+![View all posts in admin panel](/media/admin_view_posts.jpg)
+    <li>Admin selects 'Add Post' and they then get redirected to the add post page where they need to fill in all the fields like in the user form to create a post</li>
+![Adding post form](/media/admin_add_post.jpg)
+    <li>View comments on admin panel</li>
+
+![View all comments possted on website to be approved](/media/admin_comment_view.jpg)
+    <li>Comments need to be approved by admin in order to be on the website</li>
+
+![Overview of all requested comments](/media/admin_add_comments.jpg)
+
+</ul>
+
+</details>
+
 <h2>Responsiveness</h2>
 
 <hr>
@@ -271,53 +297,211 @@ Mobile Wireframes
 
 ![Entity Relationship Diagram for Project](media/ERD_for_PP4.jpeg)
 
+<p>The User Model - Django default User Model. We will use user (PK), Email and Password.</p>
+<p>The Drinks Model - This will be our main model and we are going to use this to create posts, get post id, autor id to be able to select, edit and delete the correct posts.
+The post model contains the title, spirit, slug, author, feature_image, updated_on, created_on, ingredients, instructions, status and likes</p>
+<p>The Post Model - The post model is derived from the drinks model, when we create our forms we will be using the post model for this</p>
+<p>The Comment Model - The comment model will contain the post, name, email, body, created_on, approved</p>
+<p>The Categories Model - we were suppose to use this in order to retrieve the spirit id to return a certain group of drinks but ran out of time and was not able to implement this, will be a future idea</p>
+Favourites Model - Contains post.id, user, likes, image
+
+<h3>Relationships</h3>
+<p>User and Post model is a one to many relationship</p>
+<p>User and favourties model is a one to many relationship between eachother</p>
+<p>post andcomments model is a one to many relationships</p>
+<p>Like model had a many to many field</p>
+
 <h2>Colours</h2>
 
 <h2>Typegraphy</h2>
-<p>fonts</p>
-<p>font awesome icons</p>
+<ul>
+    <li>Fonts used for this website:
+    <ul>
+    <li>Montserrat</li>
+    <li>Aboreto is going to be used for title and smaller heading, Helvetica as secondary font</li>
+    <li>Montserrat for details and other descriptions, Arial as secondary font</li>
+    <li>Roboto Slab - Spirit Names - Rum, Vodka, Gin, Sans Serif as secondary font</li>
+    </ul>
+    </li>
+</ul>
 
-<h2>Features</h2>
-<p>index page gives a small intro to webpage, eye catching when users first land on it, register and sign in button for users that need to log in or need to register and account</p>
-<p>Dissapears when users log in</p>
-<p>explore page contains a list of all the drinks that have been posted, with the name of the drink, spirit, author name and when it was displayed, likes and comments</p>
-<p>register page</p>
-<p>login page</p>
-<p>logout page</p>
-<p>favourites page</p>
+<h2>Colors</h2>
+<p>So the type of style I was going for was a premium looking website, so I kept it sharp and simple, black and white.</p>
+<p>I used red for some of the buttons when hovered over and on the social links</p>
+<p>For the post detail eveything was white and overwhelming so I decided to wrap the instructions div in a rgb(247, 242, 242) </p>
+
+![Description box color rgb(247, 242, 242)](/media/description_box_color.jpg)
+
+<h2>Font Awesome Icons</h2>
+<p>Only used a few icons in this project, did not want to overwhelm users with icons all over the page, and it kept it simpe to retrieve when appending its values</p>
+<p>A Martini glass icon is used on the websites title</p>
+
+![Martini glass next to the websites title](/media/font_awesome_icon_2.jpg)
+<p>The next icons are the like and comment icons, the heart fills up when a valid user likes it, next to the icons there will just be there the number of likes and comments on the post</p>
+
+![Like and comment icons](/media/font_awesome_icon_1.jpg)
+
+<h2>Future Features/Ideas</h2>
+<ul>
+<li>Let users be able to have a drafts section, so that if they have an unfinished post they can finis making it later</li>
+<li>Add virgin drinks, so that our target audience can expand so that everyone can gain benefits from this page</li>
+<li>Add a category filter that filters out through spirit name, if a user wants to view drinks ONLY made by rum they can filter out the drinks and only drinks made with rum will appear on the site</li>
+<li>Favicon, wish I got find the piece to the puzzle but ran of out time and I was not able to implement this feature</li>
+</ul>
+
 
 <h2>Languages</h2>
-<p>Python</p>
-<p>HTML</p>
-<p>CSS</p>
-<p>Javascript</p>
+<ul>
+    <p>Python</p>
+    <p>HTML</p>
+    <p>CSS</p>
+    <p>Javascript</p>
+</ul>
 
 <h2>Technologies</h2>
-<p>Django</p>
-<p>Github</p>
-<p>Gitpod</p>
-<p>Heroku</p>
-<p>Stack Overflow</p>
-<p>Balsamiq</p>
-<p>Pep8</p>
-<p>Cloudinary</p>
-<p>PostgrelSQL</p>
-<p>Bootstrap</p>
+<ul>
+    <p>Django</p>
+    <p>Github</p>
+    <p>Gitpod</p>
+    <p>Heroku</p>
+    <p>Stack Overflow</p>
+    <p>Balsamiq</p>
+    <p>Pep8</p>
+    <p>Cloudinary</p>
+    <p>PostgrelSQL</p>
+    <p>Bootstrap</p>
+</ul>
 
 <h2>Testing, bugs and fixed</h2>
-<p>Testing</p>
-<p>pep8 all files</p>
-<p>HTML validator</p>
-<p>CSS validator</p>
+<ul>
+    <li>Testing
+    <ul>
+    <li>Pep8 screenshots code</li>
+<p>Admin code</p>
+
+![Pep8 report for blog admin page](/media/pep8_admin.jpg)
+<p>Admin URLs code</p>
+
+![Pep8 report for for blog urls](/media/pep8_admin_urls.jpg)
+<p>Apps code</p>
+
+![Pep8 report for blog apps](/media/pep8_apps.jpg)
+<p>Forms code</p>
+
+![Pep8 report for blog forms](/media/pep8_forms.jpg)
+<p>manage.py code</p>
+
+![Pep8 report for blog manage.py](/media/pep8_manage.py.jpg)
+<p>Models code</p>
+
+![Pep8 report for blog models](/media/pep8_models.jpg)
+<p>Settings code - Warnings are because of the lines being too long, if I tried to indent this lines then it cause the website to break, so I am aware of these warnings and have left them so that the website does not break</p>
+
+![Pep8 report for settings](/media/pep8_settings.jpg)
+<p>Test code</p>
+
+![Pep8 report for tests](/media/pep8_tests.jpg)
+<p>URLs code</p>
+
+![Pep8 report for blog url](/media/pep8_urls.jpg)
+<p>Views code</p>
+
+![Pep8 report for blog views](/media/pep8_views.jpg)
+    </ul>
+    </li>
+</ul>
+
+<p>HTML validator - Only ONE warning which was because I wrapped the title of the website in a h1 tag, this was not recommended but when I tried wrapping this in anything else the title was too small and did not stand out, so I kept it as it is. Apart from that, no warnings or errors</p>
+
+![Validator for HTML](/media/html_validator.jpg)
+
+<p>CSS validator - One error and 6 warnings</p>
+
+![CSS validator Error](/media/css_validator_1.jpg)
+![CSS validator warnings](/media/css_validator_2.jpg)
+
+<p>CSS validator passing after problems solved</p>
+ 
+![CSS validator passing](/media/css_validator_pass.jpg)
 <h3>Manuel testing</h3>
+<p>Manuel testing was done for this project, most of them are on the feature but I will explain here what I tested</p>
+<p>On the home page there is the nav bar and register buttons on the content of the page, I have gone through each link to make sure they are wired up. You can see this with all the screenshots I got above</p>
+<p>A feature I want to show that I tested is the user authentication, when the user is new or is not logged in options to register will appear, but when users have logged on then they will get the extra pages 'Add drinks' and 'Favourites' and instead of 'Login' they will have 'Logout'</p>
+<p>A message will appear confirming users that they have logged in successfully</p>
 
-<p>Solved Bugs</p>
-<p>Unsolved Bugs</p>
+![Main page for logged off user/ new user](/media/main_page_visitor.jpg)
+![Main page for registered user](/media/main_page_logged.jpg)
 
+<h3>Explore page</h3>
+<p>Tested the explore page, to see that posts will appear for users to view, posts do not have any broken images and if they do the placeholder image will appear.</p>
+<p>From here users are able to select a post and view the posts detail, ingredients and instructions on how to prep the drink</p>
+<p>Likes and comments at the bottom, registered users can like and leave comments, unregistered users cannot</p>
+
+![](/media/explore_page.jpg)
+![](/media/post_detail.jpg)
+
+<p>A user that is viewing their own post will have an 'Edit' button appear for them which will redirect them to an edit page where they can update or delete their posts</p>
+
+
+![Edit button on post](/media/author_view_edit.jpg)
+![Edit page, containes update and delete button](/media/edit_post_update_delete.jpg)
+
+<h3>Registering, Logging in and out</h3>
+<p>When logging in users will need to put the username and password they registered with</p>
+<p>To show this works a message will appear informing the users that they have successfully logged on</p>
+
+![Log in form](/media/logging_in.jpg)
+![Successful login with message](/media/main_page_logged.jpg)
+
+<p>Same when users log out, will be taken to the signout form to confirm the want to log out, and a message will appear when this i successful, features to like, comment, add drinks and view favourties will get revoked</p>
+
+![Sign out form](/media/sign_out.jpg)
+![Sign out successful](/media/signout_message.jpg)
+
+<p>Registering user works as I created the user1 user from the register form</p>
+
+![Register form](/media/user_register.jpg)
+
+<h3>Solved Bugs</h3>
+<p>The first bug I noticed was with the hero image, on my small screen it looked fine, but when I was going through it with my mentor the image stopped half way. After playing with the css and not using the bootstrap class img-fluid the problem was solved</p>
+
+![Hero Image takes up half the page](/media/bug_2.jpg)
+![Hero Image fills up screen](/media/bu_2_solved.jpg)
+
+<p>Bug 2 - In this bug the images that I added pushed all the way down, causing the footer to float front of all the elements, this is not appealing to users. I styled the footer to always be at the bottom of the screen and be pushed down by the body</p>
+
+![Image stretching all the way to the bottom, making the footer appear as if it floating](/media/bug_3.jpg)
+![Footer pushed all the way down](/media/bug_3_solved.jpg)
+
+![Code that solved footer float bug](/media/bug_3_code_solved.jpg)
+<p>Bug is solved, users image will now be posted rather than the placeholder image</p>
+
+![Placeholder image](/media/bug_4.jpg)
+![Placeholder image solved](/media/placeholder_image.jpg)
+
+<p>The last bug that I found was the footer wrapping around the div, and leaving a blank space at the bottom. Styled it so footer is at the bottom now</p>
+
+![Footer leaving blank space beneath it](/media/bug_5.jpg)
+![Footer at bottom of page now as it should be](/media/bug_5_solved.jpg)
+![](/media/bug_5_solution.jpg)
+
+
+<h3>Unsolved Bugs</h3> <p>- Bug appeared when I was trying to edit from the admin page and it was asking me for an email, the email is not required, I used some@email.com as a placeholder and it passed</p>
+
+![Admin edit post REQUIRES email](/media/bug_6_unsolved.jpg)
+
+<p>In this bug I cannot find out what the problem, the font is not consistent for each post, on some posts it is the Montserrat font family but for other posts it is just the Helvetica font</p>
+
+![Font using font family Montserrat](/media/bug_2_unsolved.jpg)
+![Post with Helvetica font](/media/bug_2_unsolved_font.jpg)
+
+<h3>Issue</h3>
+<p>An incomplete issue I currently have is the draft option, when users select draft it will send it to the admin, where the admin can publish it or just leave it. A feature I would like to add is have a drafts page where the drafts will be posted to this page, where users can view their drafts, and continue editing it or delete the post </p>
+
+![Admin receiving drafts](/media/draft_issue.jpg)
 
 <h2>Deployment</h2>
 
-<h3>Creating the enviroment</h3>
 <p>To deploy the project to heroku we first have to set 'DEBUG = False' rather than 'True'</p>
 
 <p>And we have to add 'X_FRAME_OPTIONS = "SAMEORIGIN'" Under the debug</p>
@@ -328,5 +512,10 @@ Mobile Wireframes
 </ul>
 
 <h2>Credits</h2>
-
-<p>Future features, drafts, virgin cocktails, category</p>
+<ul>
+    <li>Credits to code institutes I think therefore I blog videos, was a perfect walkthrough video to be able to get the base implemented and understanding of the project</li>
+    <li>To my mentor Narender for helping me and giving me amazing advice, when creating the delete view I was not able to link up the URLs, he gave me the solution and allowed me to complete the project</li>
+    <li>Stackover flow for all the advice on models, forms</li>
+    <li>Documentation on the django website where I learnt more about forms, CreateView, UpdateView and Delete View. Also plenty of documentation on linking views and URLs.</li>
+    <li>Finally credits to slack, I could not have done this without looking at everyones advice there, knowing that everyone got the same issues really helped me believe I was not alone struggling with this project. Plenty of documenation and explanations</li>
+</ul>
